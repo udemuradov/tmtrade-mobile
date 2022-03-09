@@ -22,21 +22,21 @@
 
 const header = document.querySelector('.main-header');
 const navTop = document.querySelector('.navbar-top-row');
-const mainBlock = document.querySelector('.main__block');
+const contentBlock = document.querySelector('.content-block');
 window.addEventListener('scroll', () => {
    const scrollPos = window.scrollY;
-   if(scrollPos > 25){
+   if(scrollPos > 100){
       header.style.position = 'fixed';
       // header.style.borderBottom ='1px solid rgb(230, 236, 242)';
       header.style.boxShadow= '0 3px 6px 0 rgb(0 0 0 / 15%)';
       navTop.style.display = 'none';
-      mainBlock.style.margin = '120px 0 0 0';
+      contentBlock.style.margin = '110px 0 0 0';
    } else {
       header.style.position = '';
       // header.style.borderBottom =''
       header.style.boxShadow= '';
       navTop.style.display = ''
-      mainBlock.style.margin = '10px 0 0 0';
+      contentBlock.style.margin = '10px 0 0 0';
    }
 })
 

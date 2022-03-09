@@ -18,7 +18,7 @@
 
       <!-- #header start -->
       <header class="navbar main-header">
-        <div class="container">
+        <div class="container" >
           <div class="row justify-content-center navbar-top-row">
             <div class="col-8">
               <div class="navbar__top">
@@ -29,43 +29,25 @@
             </div>
           </div>
           <div class="row align-items-center">
-            <div class="col-md-3">
-              <div class="navbar__logo">
-                <img src="images/splash.png" alt="">
+            <div class="col-2">
+              <div class="navbar__more-btn">
+                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"><i class="fas fa-list-ul"></i></button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>.....</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-md-5 col-lg-6">
-              <div class="navbar-search">
-                <form class="navbar-search__form" action="">
-                  <div class="select">
-                    <div class="selectBtn" data-type="firstOption">Companies</div>
-                    <div class="selectDropdown">
-                      <div class="option" data-type="selectedComp">Companies</div>
-                      <div class="option" data-type="selectedProd">Products</div>
-                      <div class="option" data-type="selectedTender">Trade Leads</div>
-                    </div>
-                  </div>
-                  <input id="navbar-search-input" class="nsi-input" oninput="return showicon()" type="text" placeholder="Search Companines...">
-                  <i class="fas fa-times nsi-remove"></i>
-                  <button>Search</button>
+            <div class="col-10">
+              <div class="navbar__search">
+                <form action="">
+                  <input placeholder="search company...." type="text">
                 </form>
-              </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-              <div class="navbar__links">
-                <div class="navbar__links-nav">
-                  <ul>
-                    <li><a href="#">Companies</a></li>
-                    <li><a href="#">Leads</a></li>
-                  </ul>
-                </div>
-                <div class="navbar__sign">
-                  <img src="images/user.png" alt="">
-                  <div class="navbar__sign-link">
-                    <a href="#">Sign In</a>
-                    <a href="#">Join</a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -130,76 +112,61 @@
     <main class="main">
       <div class="content">
         <div class="container" style="padding: 0 0;" >
+          <div class="content-block">
+            <div class="homepage">
+              <div class="homepage__slider">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="images/slide1.jpg" alt="">
+                      </a>
+                    </div>
+                  <div class="swiper-slide">
+                      <a href="#">
+                        <img src="images/slide2.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <div style="height: 1000px;" class="homepage__any"></div>
+            </div>
+          </div>
+          <nav class="navbar navbar-bottom fixed-bottom">
+            <div class="navbar__bottom">
+              <div class="navbar__link">
+                <a href="#">
+                  <img src="images/navbar/navbar_home.png" alt="">
+                </a>
+              </div>
+              <div class="navbar__link">
+                <a href="#">
+                  <img src="images/navbar/navbar_category.png" alt="">
+                </a>
+              </div>
+              <div class="navbar__link">
+                <a href="#">
+                  <img src="images/navbar/navbar_company.png" alt="">
+                </a>
+              </div>
+              <div class="navbar__link">
+                <a href="#">
+                  <img src="images/navbar/navbar_transport.png" alt="">
+                </a>
+              </div>
+              <div class="navbar__link">
+                <a href="#">
+                  <img src="images/navbar/navbar_login.png" alt="">
+                </a>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
     </main>
-    <footer class="footer">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="offset-md-4 offset-lg-4 offset-xl-3 offset-xxl-1 col-md-3 col-lg-3 col-xl-4 col-xxl-6">
-              <div class="footer__logo">
-                <div class="footer__text">
-                  <span>TM TRADE</span>
-                  <p>Türkmenistanyň Söwda Platformasy</p>
-                </div>
-                <div class="footer__get-app">
-                  <ul>
-                    <li><a href="#"><img src="images/appstore.png" alt=""></a></li>
-                    <li><a href="#"><img src="images/googleplay.png" alt=""></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-              <div class="footer__content">
-                <div class="footer__info">
-                  <h4>HABARLAŞMAK ÜÇIN</h4>
-                  <p><i class="fas fa-map-marker-alt"></i> 745000, A.Nyýazow köç. №27, Türkmenbaşy/Balkan/Türkmenistan</p>
-                  <ul>
-                    <li><a href="tel: +99324322050"><i class="fas fa-phone-alt"></i>Tel/Fax: +99324322050</a></li>
-                    <li><a href="tel: +99362068181"><i class="fas fa-mobile-alt"></i>Mob: +99362068181</a></li>
-                    <li><a href="tel: +99363738746"><i class="fas fa-mobile-alt"></i>Mob: +99363738746</a></li>
-                    <li><a href="https://instagram.com/tmtrade_official"><i class="fab fa-instagram"></i>@tmtrade_official</a></li>
-                    <li><a href="mailto: info@trade.com.tm"><i class="fas fa-envelope"></i>info@trade.com.tm</a></li>
-                  </ul>
-                </div>
-                <div class="footer__links">
-                  <ul>
-                    <li><a href="#">Biz barada</a><span>|</span></li>
-                    <li><a href="#">Şertler we Düzgünler</a><span>|</span></li>
-                    <li><a href="#">Şahsy maglumatlaryň goragy</a><span>|</span></li>
-                    <li><a href="#">Mahabat beriň</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer__bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3 col-xl-6">
-                <span>© 2021 - Ähli haklary goralan</span>
-              </div>
-              <div class="col-md-9 col-xl-6">
-                <div class="footer__bottom-links">
-                  <ul>
-                    <li><a href="#">Biz barada</a><span>|</span></li>
-                    <li><a href="#">Şertler we Düzgünler</a><span>|</span></li>
-                    <li><a href="#">Şahsy maglumatlaryň goragy</a><span>|</span></li>
-                    <li><a href="#">Mahabat beriň</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </footer>
-    <!-- <div class="verybottom">
-      <div class="container">
-        
-      </div>
-  </div> -->
+
     
       <script src="js/lib/bootstrap.min.js"></script>
       <script src="js/lib/swiper-bundle.min.js"></script>
@@ -221,10 +188,6 @@
           delay: 2500,
           disableOnInteraction: false,
         },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
         });
       </script>
       <script>
