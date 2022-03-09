@@ -760,6 +760,7 @@
 }
 .marquee-js__wrapper {
   width: 100000px;
+  margin-left: -99%;
   display: flex;
   flex-direction: row;
   margin-top: 10px;
