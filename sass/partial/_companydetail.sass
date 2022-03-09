@@ -1,0 +1,129 @@
+.company-info
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    height: 280px
+    &__content
+        width: 60%
+        display: flex
+        flex-direction: row
+        align-items: center
+    &__logo
+        display: flex
+        justify-content: center
+        width: 30%
+        img
+            object-fit: scale-down
+            padding: 5px 10px
+    &__info
+        width: 70%
+        margin-left: 10px
+        padding-right: 10px
+        h4
+            margin-bottom: 5px
+            font-weight: 700
+            letter-spacing: 1px
+        p
+            margin-bottom: 15px
+            color: $text-color222
+            font-weight: 500
+            font-size: 16px
+            line-height: 25px
+            display: flex
+            align-items: center
+            i
+                color: $red
+                font-size: 25px
+                margin-right: 10px
+    &__links
+        display: flex
+        flex-direction: row
+        ul
+            li
+                margin-bottom: 10px
+                display: flex
+                a
+                    font-size: 14px
+                    font-weight: 500
+                    &:hover
+                        text-decoration: underline
+                    i
+                        font-size: 20px
+                        margin-right: 10px
+        &-phones
+            margin-right: 70px
+    &__main
+        width: 40%
+        overflow: hidden
+        img
+            min-width: 100%
+            max-width: 100%
+            min-height: 100%
+            object-fit: cover
+            object-position: top
+
+.company-detail-col
+    background-color: $body-bg
+.company-detail
+    padding: 20px 0
+    margin-top: 10px
+    background-color: $white
+    &__about, &__products, &__brochure, &__categories, &__business-segment, &__map, &__gallery
+        padding: 0 20px
+        margin-bottom: 20px
+        h5
+            font-size: 20px
+            font-weight: 600
+            padding-bottom: 10px
+    &__products
+        ul
+            columns: 2
+            -webkit-columns: 2
+            -moz-columns: 2
+            li
+                display: flex
+                padding-top: 7px
+                align-items: center
+                i
+                    font-size: 6px
+                    margin-right: 10px
+
+    &__brochure
+        a
+            padding-left: 10px 
+            display: flex
+            font-size: 16px
+            align-items: center
+            i
+                font-size: 20px
+                margin-right: 5px
+    &__filter
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        ul
+    &__categories
+        width: 50%
+    &__business-segment
+        width: 50%
+    &__gallery
+    &__map
+        width: 100%
+        height: 200px
+        #map
+            width: 100%
+            height: 100%
+        
+    &__
+    &__
+    
+    
+.company-detail-banner-col
+    padding: 0 12px 0 5px
+    background-color: $body-bg
+    .company-detail__banner
+        margin-top: 10px
+        background-color: $white
+        img
+            width: 100%

@@ -1,0 +1,344 @@
+.navbar-top-row-scrolled
+	display: none
+.navbar
+	&__top
+		display: flex
+		padding-top: 5px
+		padding-bottom: 5px
+		justify-content: end
+		.select-lang
+			position: relative
+			width: 120px
+			z-index: 1000
+			font-size: 12px
+			&-btn
+				display: flex
+				flex-direction: row
+				align-items: center
+				img
+					margin-right: 5px
+			.select-lang__btn 
+				display: flex
+				height: 100%
+				align-items: center
+				align-self: center
+				padding-left: 10px
+				box-sizing: border-box
+				border-radius: 3px
+				width: 100%
+				cursor: pointer
+				position: relative
+				-webkit-user-select: none
+					-moz-user-select: none
+					-ms-user-select: none
+						user-select: none
+				background: #fff
+				font-size: 14px
+				display: flex
+				align-items: center
+				i
+					margin-left: 5px
+					font-size: 12px
+					color: #666
+			.select-lang__btn.toggle 
+				border-radius: 3px 3px 0 0
+
+			.select-lang__btn.toggle:after 
+				-webkit-transform: translateY(-50%) rotate(-135deg)
+					transform: translateY(-50%) rotate(-135deg)
+
+			.select-lang__dropdown 
+				position: absolute
+				top: 100%
+				width: 100%
+				border-radius: 0 0 3px 3px
+				overflow: hidden
+				background: var(--bg1)
+				border-top: 1px solid #eee
+				z-index: 1
+				background: #fff
+				-webkit-transform: scale(1, 0)
+					transform: scale(1, 0)
+				-webkit-transform-origin: top center
+					transform-origin: top center
+				visibility: hidden
+				transition: 0.2s ease
+				box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2)
+				font-size: 12px
+				.option-lang
+					display: flex
+					flex-direction: row
+					align-items: center
+					a
+						display: inline-block
+						width: 100%
+						padding: 10px
+						img
+							margin-right: 5px
+			.select-lang__dropdown .option-lang 
+				box-sizing: border-box
+				cursor: pointer
+
+			.select-lang__dropdown .option-lang:hover 
+				background: #f8f8f8
+
+			.select-lang__dropdown.toggle 
+				visibility: visible
+				-webkit-transform: scale(1, 1)
+				transform: scale(1, 1)
+
+	&__logo
+		img
+			width: 100%
+	&__search
+		display: flex
+		flex-direction: column
+	&__sign
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		img
+			width: 42%
+			margin-right: 10px
+		&-link
+			display: flex
+			flex-direction: column
+			a
+				color: $dark-blue
+				font-weight: 700
+				&:hover
+					color: $dark-blue
+					text-decoration: underline
+	&__links
+		display: flex
+		justify-content: space-between
+		align-items: center
+		ul
+			display: flex
+			flex-direction: row
+			li
+				margin-right: 20px
+				a
+					font-size: 16px
+					font-weight: 700
+					color: $dark-blue
+					&:hover
+						text-decoration: underline
+.navbar-search__form
+	position: relative
+	display: flex
+	flex-direction: row
+	input
+		font-size: 14px
+		padding: 0px 10px
+		position: relative
+		border: 2px solid $yellow
+		width: 89%
+		height: 35px
+		outline: none
+		border-left: 1px solid $border-grey
+	button
+		font-size: 14px
+		width: 20%
+		padding: 0 5px
+		border: 0
+		background-color: $yellow
+		color: $text-color222
+		height: 35px
+	.nsi-remove
+		position: absolute
+		background: $white
+		color: $red
+		top: 22%
+		font-size: 20px
+		font-weight: 700
+		right: 17%
+		display: none
+		cursor: pointer
+	.nsi-active
+		display: initial
+		
+
+
+	&__item-content
+		padding: 3px 5px
+		width: 100%
+		a
+			font-size: 13px
+			position: relative 
+			transition: 1s
+			&::after
+				content: ''
+				color: $white
+				position: absolute
+				left: 120%
+				top: 25%
+				width: 7px
+				height: 7px
+				background-color: #fff
+				border: 1px solid
+				border-color: transparent transparent $text-color222 $text-color222
+				z-index: 1111
+				transform: rotate(-45deg)
+	&:hover .search-dropdown__dropdown-list
+		display: initial
+	&__dropdown-list
+		position: absolute
+		left: -1.5%
+		min-height: 100%
+		top: 100%
+		display: none
+		border: 2px solid $yellow
+		border-top: none
+		z-index: 100
+	&__dropdown-item
+		padding: 5px 10px
+		a
+			font-size: 13px
+
+.select 
+	position: relative
+	width: 150px
+	border: 2px solid $yellow
+	z-index: 1000
+	font-size: 12px
+	border-right: 1px solid $border-grey
+	.selectBtn 
+		display: flex
+		height: 100%
+		align-items: center
+		align-self: center
+		padding-left: 10px
+		box-sizing: border-box
+		border-radius: 3px
+		width: 100%
+		cursor: pointer
+		position: relative
+		-webkit-user-select: none
+			-moz-user-select: none
+			-ms-user-select: none
+				user-select: none
+		background: #fff
+		font-size: 14px
+
+	.selectBtn:after 
+		content: ""
+		position: absolute
+		top: 50%
+		right: 15px
+		width: 6px
+		height: 6px
+		-webkit-transform: translateY(-50%) rotate(45deg)
+			transform: translateY(-50%) rotate(45deg)
+		border-right: 2px solid #666
+		border-bottom: 2px solid #666
+		transition: 0.2s ease
+
+	.selectBtn.toggle 
+		border-radius: 3px 3px 0 0
+
+	.selectBtn.toggle:after 
+		-webkit-transform: translateY(-50%) rotate(-135deg)
+			transform: translateY(-50%) rotate(-135deg)
+
+	.selectDropdown 
+		position: absolute
+		top: 100%
+		width: 100%
+		border-radius: 0 0 3px 3px
+		overflow: hidden
+		background: var(--bg1)
+		border-top: 1px solid #eee
+		z-index: 1
+		background: #fff
+		-webkit-transform: scale(1, 0)
+			transform: scale(1, 0)
+		-webkit-transform-origin: top center
+			transform-origin: top center
+		visibility: hidden
+		transition: 0.2s ease
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2)
+		font-size: 12px
+
+.select .selectDropdown .option 
+	padding: 10px
+	box-sizing: border-box
+	cursor: pointer
+
+.select .selectDropdown .option:hover 
+	background: #f8f8f8
+
+.select .selectDropdown.toggle 
+	visibility: visible
+	-webkit-transform: scale(1, 1)
+		transform: scale(1, 1)
+
+.main-header
+	padding: 10px 0
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-self: center
+	align-items: center
+	z-index: 1000
+	background-color: #fff
+	transition: .4s ease-out
+	.logo
+		width: 220px
+		img
+			width: 88%
+	.navbar_links
+		display: flex
+		list-style: none
+		margin-right: 50px
+		letter-spacing: 1px
+		.navbar_link
+			transition: opacity .4s ease-in-out, transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+			&:nth-of-type(2)
+				transition-delay: .1s
+			&:nth-of-type(3)
+				transition-delay: .2s
+			&:nth-of-type(4)
+				transition-delay: .3s
+			a
+				margin: 3px 10px 3px 3px
+				padding: 16px 8px
+			a:hover
+				background: rgba(255, 255, 255, 0.2)
+	.menu-icon
+		position: relative
+		padding: 26px 10px
+		cursor: pointer
+		z-index: 1
+		display: none
+		&__line
+			display: block
+			position: relative
+			background: #000
+			height: 2px
+			width: 20px
+			border-radius: 4px
+			transition: background .8s ease
+			&::before, &::after
+				content: ''
+				position: absolute
+				height: 100%
+				width: 100%
+				border-radius: 4px
+				background: #000
+				transition: background .8s ease
+			&::before
+				transform: translateY(-5px)
+			&::after
+				transform: translateY(5px)
+	.menu-btn
+		display: none
+	&scrolled
+		background: $white
+		color: white
+		.menu-icon
+			&__line,
+			&__line::before,
+			&__line::after
+				background: white
+

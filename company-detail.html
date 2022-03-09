@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/lib/roboto.css" />
+    <link rel="stylesheet" type="text/css" href="css/lib/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/lib/lightgallery.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/lib/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Document</title>
+</head>
+<body>
+
+      <!-- #header start -->
+      <header class="navbar main-header">
+        <div class="container">
+          <div class="row navbar-top-row">
+            <div class="offset-md-10 col-md-2 ">
+              <div class="navbar__top">
+                <!-- <a style="margin-right: 20px;" href="index.html">HOME PAGE</a>
+                    <a style="margin-right: 20px;" href="search.html">SEARCH PAGE</a>
+                    <a style="margin-right: 20px;" href="leads.html">LEADS</a>
+                    <a style="margin-right: 20px;" href="leads-detail.html">LEADS DETAIL</a>
+                    <a style="margin-right: 20px;" href="lead-add.html">LEAD ADD</a>
+                    <a style="margin-right: 20px;" href="company-detail.html">COMPANY-DETAIL</a> -->
+                    <div class="select-lang">
+                      <div class="select-lang__btn select-lang-btn" data-type="initialLang">
+                        <img src="images/flag/ru.png" alt="">
+                        Russian
+                        <!-- <i class="fas fa-chevron-down"></i> -->
+                      </div>
+                      <div class="select-lang__dropdown">
+                        <div class="option-lang option-langs" data-type="russian">
+                          <a href="#"><img src="images/flag/ru.png" alt="">Английский</a> 
+                        </div>
+                        <div class="option-lang option-langs" data-type="russian">
+                          <a href="#"><img src="images/flag/tm.png" alt="">Turkmen</a> 
+                        </div>
+                        <div class="option-lang option-langs" data-type="russian">
+                          <a href="#"><img src="images/flag/ru.png" alt="">Russian</a> 
+                        </div>
+                        <div class="option-lang option-langs" data-type="russian">
+                          <a href="#"><img src="images/flag/tm.png" alt="">Turkmen</a> </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-3">
+              <div class="navbar__logo">
+                <img src="images/splash.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-5 col-lg-6">
+              <div class="navbar-search">
+                <form class="navbar-search__form" action="">
+                  <div class="select">
+                    <div class="selectBtn" data-type="firstOption">Companies</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="selectedComp">Companies</div>
+                      <div class="option" data-type="selectedProd">Products</div>
+                      <div class="option" data-type="selectedTender">Trade Leads</div>
+                    </div>
+                  </div>
+                  <input id="navbar-search-input" class="nsi-input" oninput="return showicon()" type="text" placeholder="Search Companines...">
+                  <i class="fas fa-times nsi-remove"></i>
+                  <button>Search</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <div class="navbar__links">
+                <div class="navbar__links-nav">
+                  <ul>
+                    <li><a href="#">Companies</a></li>
+                    <li><a href="#">Leads</a></li>
+                  </ul>
+                </div>
+                <div class="navbar__sign">
+                  <img src="images/user.png" alt="">
+                  <div class="navbar__sign-link">
+                    <a href="#">Sign In</a>
+                    <a href="#">Join</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </header>
+      <!-- #header end -->
+    <main class="main">
+      <div class="content">
+        <div class="container" style="padding: 0 0;" >
+          <div class="main__block">
+            <div class="main__block-content" style="background-color: white;">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="company-info">
+                    <div class="company-info__content">
+                      <div class="company-info__logo">
+                        <img src="images/4.jpg" alt="">
+                      </div>
+                      <div class="company-info__info">
+                        <h4>AK YAYLA</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> G. Kuliyev Street (2127) "Ak Gaya" shopping center 1st floor. Ashgabat/Trukmenistan</p>
+                        <div class="company-info__links">
+                          <ul class="company-info__links-phones">
+                            <li><a href="tel: +99312575757"><i class="fas fa-phone-alt"></i>+99312575757</a></li>
+                            <li>&nbsp<a href="tel: +99365710788"><i class="fas fa-mobile-alt"></i>+99365710788</a></li>
+                            <li>&nbsp<a href="tel: +99365710788"><i class="fas fa-mobile-alt"></i>+99365710788</a></li>
+                            <li>&nbsp<a href="tel: +99365710788"><i class="fas fa-mobile-alt"></i>+99365710788</a></li>
+                          </ul>
+                          <ul class="company-info__links-web">
+                            <li><a href="tel: +99312763771"><i class="fas fa-fax"></i>+99312763771</a></li>
+
+                            <li><a href="mailto: ak_profile_upvc@mail.ru"><i class="fas fa-envelope"></i>ak_profile_upvc@mail.ru</a></li>
+                            <li><a href="https://akyayla.com"><i class="fas fa-globe"></i>akyayla.com</a></li>
+                            <li><a href="https://instagram.com/akyayla_mebel_tm"><i class="fab fa-instagram"></i>akyayla_mebel_tm</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="company-info__main">
+                      <img src="images/paddon.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9 company-detail-col">
+                  <div class="company-detail">
+                    <div class="company-detail__about">
+                      <h5>
+                        About Us
+                      </h5>
+                      <p>
+                        Manufacture of plastic and aluminum window and door products in special sizes according to customers orders. Manufacture and installation of furniture products in special sizes. By providing a wide range of materials in our company, also we help customers choose products. We guarantee that we will prepare a 3D design for your products, calculate the volume of work and provide high quality, efficient work in a short time at reasonable prices.
+                      </p>
+                    </div>
+                    <div class="company-detail__products">
+                      <h5>
+                        Our products and Services
+                      </h5>
+                      <ul>
+                        <li><i class="fas fa-circle"></i>1measurement, delivery, installation, 1measurement, delivery, installation, 1measurement, delivery, installation, </li>
+                        <li><i class="fas fa-circle"></i>2measurement, delivery, installation, warranty</li>
+                        <li><i class="fas fa-circle"></i>3measurement, delivery, installation, warranty</li>
+                        <li><i class="fas fa-circle"></i>5measurement, delivery, installation, warranty</li>
+                        <li><i class="fas fa-circle"></i>6measurement, delivery, installation, warranty</li>
+                        <li><i class="fas fa-circle"></i>7measurement, delivery, installation, warranty</li>
+                        <li><i class="fas fa-circle"></i>8measurement, delivery, installation, warranty</li>
+                        <li><i class="fas fa-circle"></i>9measurement, delivery, installation, warranty</li>
+                        <li><i class="fas fa-circle"></i>10measurement, delivery, installation, warranty</li>
+                        <li><i class="fas fa-circle"></i>11measurement, delivery, installation, warranty</li>
+                        <li><i class="fas fa-circle"></i>12measurement, delivery, installation, warranty</li>
+                      </ul>
+                    </div>
+                    <div class="company-detail__brochure">
+                      <h5>
+                       Company Brochure
+                      </h5>
+                      <a href="#"><i class="fas fa-file-download"></i>Download Brochure</a>
+                    </div>
+                    <div class="company-detail__filter">
+                      <div class="company-detail__categories">
+                        <h5>
+                          Categories
+                         </h5>
+                        <ul>
+                          <li>Construction and Building Industry / General</li>
+                          <li>Construction and Building Industry / General</li>
+                          <li>Construction and Building Industry / General</li>
+                        </ul>
+                      </div>
+                      <div class="company-detail__business-segment">
+                        <h5>
+                          Business Segment
+                         </h5>
+                        <ul>
+                          <li>Exporter</li>
+                          <li>Manufacture</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="company-detail__gallery">
+                      <h5>Photos</h5>
+                      <div class="detail-gallery__lightgallery" id="lightgallery">
+                        <a href="images/senagat.jpg">
+                          <img src="images/senagat.jpg" />
+                        </a>    
+                        <a href="images/senagat.jpg">
+                          <img src="images/senagat.jpg" />
+                        </a>    
+                        <a href="images/senagat.jpg">
+                          <img src="images/senagat.jpg" />
+                        </a>    
+                        <a href="images/senagat.jpg">
+                          <img src="images/senagat.jpg" />
+                        </a>    
+                        <a href="images/senagat.jpg">
+                          <img src="images/senagat.jpg" />
+                        </a>     
+                        <a href="images/senagat.jpg">
+                          <img src="images/senagat.jpg" />
+                        </a>       
+                      </div>
+                    </div>
+                    <div class="company-detail__map">
+                      <h5>Map</h5>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div id="map"></div>
+                          <script>
+                            var map = L.map('map', {}).setView([53.083054726240, 40.041514827365], 13);
+                          </script>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="company-detail-banner-col col-md-3">
+                  <div class="company-detail__banner">
+                    <img src="images/1.gif" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="offset-md-4 offset-lg-4 offset-xl-3 offset-xxl-1 col-md-3 col-lg-3 col-xl-4 col-xxl-6">
+          <div class="footer__logo">
+            <div class="footer__text">
+              <span>TM TRADE</span>
+              <p>Türkmenistanyň Söwda Platformasy</p>
+            </div>
+            <div class="footer__get-app">
+              <ul>
+                <li><a href="#"><img src="images/appstore.png" alt=""></a></li>
+                <li><a href="#"><img src="images/googleplay.png" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+          <div class="footer__content">
+            <div class="footer__info">
+              <h4>HABARLAŞMAK ÜÇIN</h4>
+              <p><i class="fas fa-map-marker-alt"></i> 745000, A.Nyýazow köç. №27, Türkmenbaşy/Balkan/Türkmenistan</p>
+              <ul>
+                <li><a href="tel: +99324322050"><i class="fas fa-phone-alt"></i>Tel/Fax: +99324322050</a></li>
+                <li><a href="tel: +99362068181"><i class="fas fa-mobile-alt"></i>Mob: +99362068181</a></li>
+                <li><a href="tel: +99363738746"><i class="fas fa-mobile-alt"></i>Mob: +99363738746</a></li>
+                <li><a href="https://instagram.com/tmtrade_official"><i class="fab fa-instagram"></i>@tmtrade_official</a></li>
+                <li><a href="mailto: info@trade.com.tm"><i class="fas fa-envelope"></i>info@trade.com.tm</a></li>
+              </ul>
+            </div>
+            <div class="footer__links">
+              <ul>
+                <li><a href="#">Biz barada</a><span>|</span></li>
+                <li><a href="#">Şertler we Düzgünler</a><span>|</span></li>
+                <li><a href="#">Şahsy maglumatlaryň goragy</a><span>|</span></li>
+                <li><a href="#">Mahabat beriň</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xl-6">
+            <span>© 2021 - Ähli haklary goralan</span>
+          </div>
+          <div class="col-md-9 col-xl-6">
+            <div class="footer__bottom-links">
+              <ul>
+                <li><a href="#">Biz barada</a><span>|</span></li>
+                <li><a href="#">Şertler we Düzgünler</a><span>|</span></li>
+                <li><a href="#">Şahsy maglumatlaryň goragy</a><span>|</span></li>
+                <li><a href="#">Mahabat beriň</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+    
+      <script src="js/lib/bootstrap.min.js"></script>
+      <script src="js/lib/lightgallery.min.js"></script>
+      <script src="js/lib/leaflet.js"></script>
+      <script src="js/main.js"></script>
+      
+      <script>
+        var imagPop = document.getElementById("lightgallery");
+        lightGallery(imagPop);
+      </script>
+</body>
+</html>
+
+
+<!-- 
+<div class="row">
+  <div class="col-md-12">
+      <div class="company-detail__main">
+          <div class="company-detail__banner">
+              <img src="images/main.jpg" alt="">
+          </div>
+          <div class="company-detail__info">
+              <div class="company-detail__logo">
+                  <img src="images/2.png" alt="">
+              </div>
+              <div class="company-detail__contacts">
+                  <h2>Senagat Plastik</h2>
+                  <p><i class="fas fa-map-marker-alt"></i> <span>Turkmenistan, Balkan welayat, Turkmenbasy etraby, Garassyzlyk kocesi 11a binasy 745010</span></p>
+                  <div class="company-detail__links">
+                      <div class="row">
+                          <div class="col-md-3">
+                              <div class="company-detail__links-row">
+                                  <a href="#">
+                                      <i class="fas fa-phone-alt"></i>
+                                      +99393939393
+                                  </a>
+                                  <a href="#">
+                                      <i class="fas fa-fax"></i>
+                                      +99324329992
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="company-detail__links-row">
+                                  <a href="#">
+                                      <i class="fab fa-whatsapp"></i>
+                                      +99393939393
+                                  </a>
+                                  <a href="#">
+                                      <i class="fas fa-globe"></i>
+                                      senagatplasik.com
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="company-detail__links-row">
+                                  <div class="company-detail__links-row">
+                                      <a href="#">
+                                          <i class="fas fa-mobile"></i>
+                                          +99393939393
+                                      </a>
+                                      <a href="#">
+                                          <i class="fab fa-telegram-plane"></i>
+                                          +99393939393
+                                      </a>
+                                  </div>    
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="company-detail__links-row">
+                                  <a href="#">
+                                      <i class="fab fa-instagram"></i>
+                                      senagatplastik_official
+                                  </a>
+                                  <a href="#">
+                                      <i class="fas fa-envelope"></i>
+                                      +99393939393
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-2 mt-3">
+    <img src="images/1.gif" alt="">
+    <img src="images/2.gif" alt="">
+    <img src="images/3.gif" alt="">
+  </div>
+  <div class="col-md-10">
+      <div class="company-detail__about">
+          <h4>О нас</h4>
+          <p>Завод по производству пластиковых поддонов хозяйственного общества «Сенагат Пластик» был построен в период 2017-2018 г. с целью обеспечения задач по диверсификации и импорт-замещению продукции, а также с целью вывода на международный рынок конкурентно способной продукции, производимой в Туркменистане.
+              Строительство объекта и запуск производства были осуществлены в течение 12 месяцев. В 2018 году объект получил необходимые разрешения и был запущен в промышленную эксплуатацию с производственной мощностью 240 000 поддонов в год.
+              В 2019 году было произведено расширение производства, что позволило увеличить производственную мощность до 480 000 поддонов в год и расширить ассортимент выпускаемой продукции.</p>   
+      </div>
+      <div class="company-detail__products">
+          <ul>
+              <li>Пластиковый поддон 1300х1100</li>
+              <li>Пластиковый поддон 1200х1200</li>
+              <li>Пластиковый поддон 1200х800</li>
+          </ul>
+          <ul>
+              <li>Пластиковый поддон 1200х800 с лыжами</li>
+              <li>PP</li>
+              <li>HDPE</li>
+          </ul>
+      </div>
+      <div class="company-detail__photos ">
+        <h4>Photos</h4>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/senagat.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/senagat.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/senagat.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/senagat.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/senagat.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/senagat.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/senagat.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/senagat.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/senagat.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+  </div>
+</div> -->
+
+

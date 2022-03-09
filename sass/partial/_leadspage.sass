@@ -1,0 +1,477 @@
+//LEADS LIST
+.leadspage-title
+    background-color: $white
+    padding: 15px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    h2
+        font-size: 20px
+        color: $text-color222
+    a
+        font-size: 14px
+        padding: 7px 14px
+        background-color: #5cb85c
+        color: $white
+.leadscard
+    background-color: $white
+    margin-top: 10px
+    &__item
+        border-bottom: 1px solid $border-grey
+    &__content
+        padding: 15px
+        &:hover
+            background-color: $hover-grey
+    &__title
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-content: center
+        padding: 5px 0
+        a
+            display: flex
+            align-items: center
+            color: $text-blue
+        img
+            object-fit: none
+    &__text
+        margin: 8px 0
+        p
+            font-size: 13px
+            color: $text-color555
+            overflow: hidden
+            display: -webkit-box
+            -webkit-box-orient: vertical
+            -webkit-line-clamp: 2
+    &__keys
+        p
+            font-size: 13px
+            color: $text-blue
+            a
+                font-size: 13px
+                color: $text-blue
+                &:hover
+                    text-decoration: underline
+    &__info
+        margin-top: 8px
+        ul
+            display: flex
+            flex-direction: row
+            li
+                margin-right: 10px
+                font-size: 13px
+
+//LEADS DETAIL PAGE
+
+.lead, .lead-last, .lead-rules
+  background-color: $white
+  margin-top: 10px
+  font-weight: normal
+  h5
+      font-size: 18px
+      color: $text-color222
+.lead
+    hr
+        color: $text-color888
+    &__detail
+        display: flex
+        flex-direction: column
+        padding: 25px
+    &__title
+    &__type
+        display: flex
+        flex-direction: row
+        align-items: center
+        align-content: center
+        align-self: center
+        h5
+            line-height: 25px
+    &__name
+        padding: 10px 0 0 5px
+        &-text
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: space-between
+            h5
+                font-size: 17px
+                font-weight: normal
+                color: $red
+            img
+                object-fit: none
+        &-info
+            padding-top: 5px
+            ul
+                display: flex
+                flex-direction: row
+                li
+                    margin-right: 13px
+                    color: $text-color222
+                    i
+                        font-size: 15px
+                    span
+                        font-weight: 500
+                        font-size: 12px
+    &__text
+        h5
+            margin-bottom: 10px
+        p
+            padding-left: 5px
+            font-size: 14px
+            color: $text-color555
+    &__contact
+        h5
+            margin-bottom: 10px
+        ul
+          padding-left: 5px
+          display: flex
+          flex-direction: column
+          li
+            margin-right: 50px
+            margin-bottom: 10px
+            a
+              font-size: 15px
+              color: $text-color222
+              font-weight: 400
+              &:hover
+                color: $text-blue
+                text-decoration: underline
+              i
+                font-size: 18px
+                margin-right: 5px
+        // a
+        //     font-size: 16px
+        //     color: $text-blue
+        //     font-weight: 500
+    &__photos
+        h5
+            margin-bottom: 10px
+    &__keys
+        h3
+            margin-bottom: 10px
+        ul
+            display: flex
+            flex-direction: row
+            padding-left: 5px
+            li
+                a
+                    font-size: 14px
+                    color: $red
+                    &:hover
+                        text-decoration: underline
+                span
+                    font-size: 16px
+                    color: $text-color888
+    &__sectors
+        h5
+            margin-bottom: 10px
+
+    &__other
+        h5
+            margin-bottom: 10px
+        ul
+            padding-left: 5px
+            li
+                padding: 3px 0
+                font-size: 14px
+                display: flex
+                flex-direction: row
+                align-items: center
+                i
+                    font-size: 6px
+                    padding-right: 7px
+                    color: $text-color222
+                a
+                    color: $text-color222
+                    &:hover
+                        color: $red
+                        text-decoration: underline
+
+.lead-last
+    &__title
+        padding: 20px 15px 10px 20px
+        h3
+            color: $text-color555
+    &__choose
+        display: flex
+        flex-wrap: wrap
+        border-top: 1px solid $border-line
+        input[type="radio"]
+            display: none
+        input[type='radio']:checked + label + .lead-last__tab
+            display: block
+        input[type="radio"]:checked + label 
+            background: #fff
+            border: 1px solid $border-grey
+            border-bottom: 1px solid $red
+        label
+            padding: 10px 10px 
+            background: #fff
+            font-weight: 500
+            color: $text-color222
+            cursor: pointer
+        .lead-last__tab
+            border-top: 1px solid $border-line
+            width: 100%
+            background: #fff
+            order: 1
+            display: none
+    &__item
+        border-bottom: 1px solid $border-grey
+        max-height: 48px
+        &:hover 
+            background-color: $hover-grey
+        a
+            font-size: 14px
+            line-height: 18px
+            display: inline
+            width: 100%
+            max-height: 48px
+            overflow: hidden
+            display: -webkit-box
+            -webkit-box-orient: vertical
+            -webkit-line-clamp: 2
+            box-sizing: border-box
+            padding: 10px 15px
+            &:hover
+                text-decoration: underline
+                color: $red
+    .lead-last-buy
+        a
+            color: $text-blue
+    .lead-last-sell
+        a
+            color: $red
+
+.lead-add
+    background-color: $white
+    margin-top: 10px
+    margin-bottom: 10px
+    font-weight: normal
+    .form-wizard 
+      background-color: $white
+      color: $text-color555
+      padding: 30px
+
+    .form-wizard .wizard-form-radio 
+      display: inline-block
+      margin-right: 20px
+      position: relative
+
+    .form-wizard .wizard-form-radio input[type="radio"] 
+      -webkit-appearance: none
+      -moz-appearance: none
+      -ms-appearance: none
+      -o-appearance: none
+      appearance: none
+      background-color: #dddddd
+      height: 25px
+      width: 25px
+      display: inline-block
+      vertical-align: middle
+      border-radius: 50%
+      position: relative
+      cursor: pointer
+
+    .form-wizard .wizard-form-radio input[type="radio"]:focus 
+      outline: 0
+
+    .form-wizard .wizard-form-radio input[type="radio"]:checked 
+      background-color: $yellow
+
+    .form-wizard .wizard-form-radio input[type="radio"]:checked::before 
+      content: ""
+      position: absolute
+      width: 10px
+      height: 10px
+      display: inline-block
+      background-color: #ffffff
+      border-radius: 50%
+      left: 1px
+      right: 0
+      margin: 0 auto
+      top: 8px
+
+    .form-wizard .wizard-form-radio input[type="radio"] ~ label 
+      cursor: pointer
+
+    .form-wizard .form-wizard-header 
+      text-align: center
+
+    .form-wizard .form-wizard-next-btn, .form-wizard .form-wizard-previous-btn, .form-wizard .form-wizard-submit 
+      background-color: $yellow
+      color: #ffffff
+      display: inline-block
+      min-width: 100px
+      min-width: 120px
+      padding: 10px
+      text-align: center
+
+    .form-wizard .form-wizard-next-btn:hover, .form-wizard .form-wizard-next-btn:focus, .form-wizard .form-wizard-previous-btn:hover, .form-wizard .form-wizard-previous-btn:focus, .form-wizard .form-wizard-submit:hover, .form-wizard .form-wizard-submit:focus 
+      color: #ffffff
+      opacity: 0.6
+      text-decoration: none
+
+    .form-wizard .wizard-fieldset 
+      display: none
+
+    .form-wizard .wizard-fieldset.show 
+      display: block
+
+    .form-wizard .wizard-form-error 
+      display: none
+      background-color: $red
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      height: 2px
+      width: 100%
+
+    .form-wizard .form-wizard-previous-btn 
+      background-color: $red
+
+    .form-wizard .form-control 
+      font-weight: 400
+      // height: auto !important
+      padding: 6px 12px
+      color: $text-color222
+      background-color: white
+      border: 1px solid #dbdbdb
+      border-radius: 0
+
+    .form-wizard .form-control:focus 
+      box-shadow: none
+
+    .form-wizard .form-group 
+      position: relative
+      margin: 20px 0
+
+    .form-wizard .wizard-form-text-label 
+      position: absolute
+      left: 10px
+      top: 10px
+      transition: 0.2s linear all
+
+    .form-wizard .focus-input .wizard-form-text-label 
+      color: $red
+      top: -15px
+      transition: 0.2s linear all
+      font-size: 12px
+
+    .form-wizard .form-wizard-steps 
+      margin: 30px 0
+      display: flex
+      justify-content: center
+
+    .form-wizard .form-wizard-steps li 
+      width: 25%
+      float: left
+      position: relative
+      font-weight: normal
+
+    .form-wizard .form-wizard-steps li::after 
+      background-color: #f3f3f3
+      content: ""
+      height: 5px
+      left: 0
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 100%
+      border-bottom: 1px solid #dddddd
+      border-top: 1px solid #dddddd
+
+    .form-wizard .form-wizard-steps li span 
+      background-color: #dddddd
+      border-radius: 50%
+      display: inline-block
+      height: 40px
+      line-height: 40px
+      position: relative
+      text-align: center
+      width: 40px
+      z-index: 1
+
+    .form-wizard .form-wizard-steps li:last-child::after 
+      width: 50%
+
+    .form-wizard .form-wizard-steps li.active span, .form-wizard .form-wizard-steps li.activated span 
+      background-color: $yellow
+      color: #000
+      font-weight: 500
+
+    .form-wizard .form-wizard-steps li.active::after, .form-wizard .form-wizard-steps li.activated::after 
+      background-color: $yellow
+      left: 50%
+      width: 50%
+      border-color: $yellow
+
+    .form-wizard .form-wizard-steps li.activated::after 
+      width: 100%
+      border-color: $yellow
+
+    .form-wizard .form-wizard-steps li:last-child::after 
+      left: 0
+
+    .form-wizard .wizard-password-eye 
+      position: absolute
+      right: 32px
+      top: 50%
+      transform: translateY(-50%)
+      cursor: pointer
+
+    .wizard-fieldset__done-text
+      background-color: $green-done
+      padding: 25px
+      color: $text-color555
+
+
+    #inputGroupFile02
+      border: 1px solid $grey-add-lead
+      background-color: $white
+      padding: 6px 12px
+    .input-group-text
+      padding: 6px 12px
+      background: $grey-add-lead
+
+
+.lead-rules
+  &__title
+    padding: 20px 15px 10px 20px
+    border-bottom: 2px solid $grey-add-lead
+  &__content
+    padding: 10px 25px 25px 25px
+    ul
+      li
+        padding-top: 10px
+        color: $text-color555
+        strong
+          margin-right: 5px
+        a
+          color: $red
+          &:hover
+            text-decoration: underline
+
+@keyframes click-radio-wave 
+  0% 
+    width: 25px
+    height: 25px
+    opacity: 0.35
+    position: relative
+  
+  100% 
+    width: 60px
+    height: 60px
+    margin-left: -15px
+    margin-top: -15px
+    opacity: 0.0
+  
+
+@media screen and (max-width: 767px) 
+  .wizard-content-left 
+    height: auto
+  
+

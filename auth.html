@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/lib/roboto.css" />
+    <link rel="stylesheet" type="text/css" href="css/lib/all.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Document</title>
+</head>
+<body style="background-color: #ffffff;">
+
+      <!-- #header start -->
+      <header class="auth-header">
+          <div class="container">
+              <div class="col-12">
+                  <div class="auth-header__content">
+                    <img src="images/splash.png" alt="">
+                  </div>
+              </div>
+          </div>
+      </header>
+      <!-- #header end -->
+
+    <main class="main-auth">
+      <div class="content">
+        <div class="container" style="padding: 0 0;" >
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <section id="form">
+                        <div id="toggle-forms">
+                            <button class="waves-effect waves-light active" id="login">Login</button>
+                            <button class="waves-effect waves-light" id="register">Register</button>
+                        </div>
+                        <form class="auth-login-form">
+                              <h1>Welcome any text</h1>
+                              <div class="auth-form">
+                                <span class="auth-input-group">
+                                  <input id="name" type="text" required>
+                                  <label for="name">Name or E-mail</label>
+                                </span>
+                                <p class="auth-form-error">
+                                  <i class="fas fa-exclamation-circle"></i>  
+                                  Sorry, error
+                                </p>
+                                <span class="auth-input-group">
+                                  <input id="password" type="password" required>
+                                  <i id="auth-form-icon" class="far fa-eye"></i>
+                                  <label for="name">Password</label>
+                                </span>
+                                <p class="auth-form-error">
+                                  <i class="fas fa-exclamation-circle"></i>  
+                                  Sorry, error
+                                </p>
+                                <button>Submit</button>
+                                <!-- <p class="auth-form-agree">By logging in, you agree to TM TRADE's <a href="#">Conditions of Use</a> and <a href="#">Privacy Policy</a>
+                                </p> -->
+                              </div>
+                        </form>
+                        <form class="auth-register-form">
+                          <h1>Welcome any text</h1>
+                          <div class="auth-form">
+                            <span class="auth-input-group">
+                              <input id="email" type="email" required>
+                              <label for="email">E-mail</label>
+                            </span>
+                            <p class="auth-form-error">
+                              <i class="fas fa-exclamation-circle"></i>  
+                              Sorry, error
+                            </p>
+                            <span class="auth-input-group">
+                              <input id="name" type="text" required>
+                              <label for="name">Name</label>
+                            </span>
+                            <p class="auth-form-error">
+                              <i class="fas fa-exclamation-circle"></i>  
+                              Sorry, error
+                            </p>
+                            <span class="auth-input-group">
+                              <input id="reg-password" type="password" required>
+                              <i id="auth-form-ico" class="far fa-eye"></i>
+                              <label for="reg-password">Password</label>
+                            </span>
+                            <p class="auth-form-error">
+                              <i class="fas fa-exclamation-circle"></i>  
+                              Sorry, error
+                            </p>
+                            <span class="auth-input-group">
+                              <input id="re-password" type="password" required>
+                              <i id="auth-form-ic" class="far fa-eye"></i>
+                              <label for="re-password">Re-Password</label>
+                            </span>
+                            <p class="auth-form-error">
+                              <i class="fas fa-exclamation-circle"></i>  
+                              Sorry, error
+                            </p>
+                            <button>Submit</button>
+                          </div>
+                      </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <div class="footer-auth">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="footer-auth__content">
+              <a href="#">Biz barada</a>-
+              <a href="#">Şertler we Düzgünler</a>-
+              <a href="#">Şahsy maglumatlaryň goragy</a>-
+              <a href="#">Mahabat beriň</a>
+              <span>© 2022 - Ähli haklary goralan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <script src="js/lib/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+          let $id = (id) => document.getElementById(id);
+var [login, register, form] = ['login', 'register', 'form'].map(id => $id(id));
+
+[login, register].map(element => {
+    element.onclick = function () {
+        [login, register].map($ele => {
+            $ele.classList.remove("active");
+        });
+        this.classList.add("active");
+        this.getAttribute("id") === "register"?  form.classList.add("active") : form.classList.remove("active");
+    }
+});
+      </script>
+      <script>
+        var myInput = document.getElementById('password'),
+        myIcon = document.getElementById('auth-form-icon');
+      // myInput.onfocus = function () {
+      //   myIcon.style.right = '14px'
+      // }
+      // myInput.onblur = function () {
+      //   myIcon.style.right = '14px'
+      // }
+      myIcon.onclick = function () {
+        if (myIcon.classList.contains('fa-eye')) {
+          this.classList.toggle('fa-eye-slash');
+          this.classList.toggle('fa-eye');      
+          myInput.setAttribute('type', 'text');
+        } else {
+          myInput.setAttribute('type', 'password');
+          this.classList.toggle('fa-eye');
+          this.classList.toggle('fa-eye-slash');
+        };
+      }
+
+      var regPassword = document.getElementById('reg-password'),
+      myIconReg = document.getElementById('auth-form-ico');
+      myIconReg.onclick = function () {
+        if (myIconReg.classList.contains('fa-eye')) {
+          this.classList.toggle('fa-eye-slash');
+          this.classList.toggle('fa-eye');      
+          regPassword.setAttribute('type', 'text');
+        } else {
+          regPassword.setAttribute('type', 'password');
+          this.classList.toggle('fa-eye');
+          this.classList.toggle('fa-eye-slash');
+        };
+      }
+
+
+      var rePassword = document.getElementById('re-password'),
+      myIconRe = document.getElementById('auth-form-ic');
+      myIconRe.onclick = function () {
+        if (myIconRe.classList.contains('fa-eye')) {
+          this.classList.toggle('fa-eye-slash');
+          this.classList.toggle('fa-eye');      
+          rePassword.setAttribute('type', 'text');
+        } else {
+          rePassword.setAttribute('type', 'password');
+          this.classList.toggle('fa-eye');
+          this.classList.toggle('fa-eye-slash');
+        };
+      }
+
+
+      </script>
+</body>
+</html>
