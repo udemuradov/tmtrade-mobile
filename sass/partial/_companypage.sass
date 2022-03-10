@@ -1,0 +1,49 @@
+.companypage
+    margin-bottom: 50px
+    .companypage-logo-col
+        padding: 0 5px 0 12px
+    .companypage-content-col
+        padding: 0 12px 0 0
+    &-cards
+    &-card
+        height: 200px
+        display: flex
+        align-items: center
+        border-bottom: 1px solid $border-grey
+        padding: 5px 5px
+        &__logo
+            height: 100px
+            img
+                width: 100%
+                object-fit: scale-down
+        &__content
+            display: flex
+            flex-direction: column
+        &__title
+            h5
+                font-size: 12px
+                overflow: hidden
+                display: -webkit-box
+                -webkit-box-orient: vertical
+                -webkit-line-clamp: 2
+        &__location
+            display: flex
+            flex-direction: row
+            padding-top: 5px
+            i
+                color: $red
+                margin-right: 5px
+            span
+                font-size: 11px
+                overflow: hidden
+                display: -webkit-box
+                -webkit-box-orient: vertical
+                -webkit-line-clamp: 1
+        &__desc
+            padding-top: 5px
+            p
+                font-size: 11px
+                overflow: hidden
+                display: -webkit-box
+                -webkit-box-orient: vertical
+                -webkit-line-clamp: 2
